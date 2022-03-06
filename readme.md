@@ -10,6 +10,11 @@ I wanted to keep it as lightweight as it gets basing it onto the `apline` image.
   - `/mnt/destination`
 - optionally set the environment variable `options` to  override the default `-av` 
 
+```
+docker run --rm -v ${PWD}/testfiles/source:/mnt/source -v ${PWD}/testfiles/destination:/mnt/destination systematicguy/auto-rsync:latest
+docker run --rm -e options=-avz -v ${PWD}/testfiles/source:/mnt/source -v ${PWD}/testfiles/destination:/mnt/destination systematicguy/auto-rsync:latest
+```
+
 # Resources
 - https://github.com/sergeyfast/alpine-rsync/blob/master/Dockerfile
 - https://stackoverflow.com/a/40525217/429162
