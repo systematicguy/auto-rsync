@@ -1,0 +1,1 @@
+docker run -v ${PWD}/testfiles/source:/mnt/source -v ${PWD}/testfiles/destination:/mnt/destination --rm auto-rsync
